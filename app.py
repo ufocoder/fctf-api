@@ -4,8 +4,6 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-app.secret_key = b'_5#y2^F4Qasasd8z\n\x3ec]/'
-
 CORS(app)
 
 isOK = {'result': True}
