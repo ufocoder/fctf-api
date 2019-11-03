@@ -1,5 +1,5 @@
 {
-    "alias": ["fctf3-api.now.com"],
+    "alias": ["fctf3-api.now.sh"],
     "version": 2,
 	"builds": [
 		{ "src": "app.py", "use": "@now/python" }
