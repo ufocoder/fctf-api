@@ -26,7 +26,6 @@ def data():
     return jsonify(tasks)
 
 
-@cross_origin()
 @app.route('/colonize', methods=['POST'])
 def colonize():
     planetId = str(request.json['planetId'])
@@ -38,7 +37,6 @@ def colonize():
     return isBad
 
 
-@cross_origin()
 @app.route('/check', methods=['POST'])
 def check():
     requestFlags = request.json['flags']
