@@ -29,7 +29,7 @@ def data():
 @app.route('/colonize', methods=['POST'])
 def colonize():
     planetId = str(request.json['planetId'])
-    flag = str(request.json['flag'])
+    flag = str(request.json['flag']).lower()
 
     if flags.get(planetId) == flag:
         return isOK
@@ -39,7 +39,7 @@ def colonize():
 
 @app.route('/check', methods=['POST'])
 def check():
-    requestFlags = request.json['flags']
+    requestFlags = [flag.lower() for flag in request.json['flags']]
 
     if requestFlags == flags:
         return isFlag            
