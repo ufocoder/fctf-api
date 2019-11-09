@@ -8,7 +8,7 @@ CORS(app)
 
 isOK = {'result': True}
 isBad = {'result': False}
-isFlag = {'result': True, 'url': 'http://ya.ru'}
+isFlag = {'result': True, 'url': 'https://docs.google.com/forms/d/e/1FAIpQLSd499vDqDUkOPa6cp8uT4ZBfVqQ3E0_elafZJezK_9Pi4J1Jg/viewform'}
 
 with open('tasks.json') as json_file:
     tasks = json.load(json_file)
@@ -37,10 +37,12 @@ def colonize():
     return isBad
 
 
+def lower(item):
+    return (item[0], item[1].lower())
+
 @app.route('/check', methods=['POST'])
 def check():
-    requestFlags = [flag.lower() for flag in request.json['flags']]
-
+    requestFlags = dict(map(lower, request.json['flags'].items()))
     if requestFlags == flags:
         return isFlag            
 
