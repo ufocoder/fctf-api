@@ -8,12 +8,12 @@
         "id": 2,
         "title": "Venus",
         "url": "https://fctf3-venus.now.sh",
-        "description": "Our Venus satellite is broken, however there is a reserve communication channel"
+        "description": "Venus satellite is broken, however there is a reserve communication channel"
     },
     {
         "id": 3,
         "title": "Earth",
-        "description": "Our Earth satellite is broken also, thre's an message received from our satellite: {fctf_[a2b22abb2ba2a2aba2ba2ba2b MzUuMTQxNTMzLC05MC4wNTI2OTU=]}"
+        "description": "Earth satellite is broken also, the message was received from it: {fctf_[a2b22abb2ba2a2aba2ba2ba2b MzUuMTQxNTMzLC05MC4wNTI2OTU=]}"
     },
     {
         "id": 4,
@@ -26,7 +26,7 @@
         "id": 5,
         "title": "Jupiter",
         "url": "https://fctf3-jupiter.now.sh",
-        "description": "The gas giant is full of layers of gas. But you can throw a stone!"
+        "description": "The gas giant is full of layers of gases. But you can throw a stone!"
     },
     {
         "id": 6,
